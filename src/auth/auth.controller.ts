@@ -9,7 +9,7 @@ export class AuthController {
     @Post('login')
     @HttpCode(HttpStatus.OK)
     @UseGuards(LocalAuthGuard)
-    @login() {
+    async login() {
         // return this.authService.login()
     }
     
